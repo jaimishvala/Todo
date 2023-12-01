@@ -5,8 +5,6 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import TodoForm from './TodoForm';
 import Switch from '@mui/material/Switch';
-import { json } from 'react-router-dom';
-
 
 function Todo() {
     const [data, setData] = useState([]);
@@ -155,7 +153,7 @@ function Todo() {
     ];
 
     return (
-        <>
+        <div>
             <TodoForm onHandleSubmit={handleFormSubmit} updateData={update} handleSelect={handleSelect} />
 
             <div style={{ height: 400, width: '100%' }}>
@@ -170,7 +168,7 @@ function Todo() {
                     pageSizeOptions={[5, 10]}
                 />
             </div>
-        </>
+        </div>
     );
 }
 
