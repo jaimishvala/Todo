@@ -46,6 +46,7 @@ function TodoForm({ onHandleSubmit, updateData,handleSelect }) {
 
             action.resetForm();
             handleClose();
+            
         },
     });
 
