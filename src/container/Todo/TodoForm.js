@@ -10,7 +10,7 @@ import { useFormik } from 'formik';
 import Checkbox from '@mui/material/Checkbox';
 import { FormControlLabel, Select } from '@mui/material';
 
-function TodoForm({ onHandleSubmit, updateData,handleSelect }) {
+function TodoForm({ onHandleSubmit, updateData, handleSelect }) {
     const [open, setOpen] = React.useState(false);
 
 
@@ -46,7 +46,7 @@ function TodoForm({ onHandleSubmit, updateData,handleSelect }) {
 
             action.resetForm();
             handleClose();
-            
+
         },
     });
 
